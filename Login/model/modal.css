@@ -1,0 +1,102 @@
+/**Modal CSS STARTS*/
+
+
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer {
+    width: 600px;
+    height: 600px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
+  
+  .modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .titleCloseBtn .OpenModal {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+/**Modal CSS ENDS*/
+  
+/*Login starts*/
+  .LoginButton {
+    width: 500px;
+    height: 50px;
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .LoginButton:hover{
+    background-color: white;
+    color:blue;
+    border-color:blue;
+
+  }
+.Labels{
+    color: darkgrey;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.InputContentt{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid burlywood;
+    padding: 10px;
+    color: black;
+    width: 500px;
+    height: 50px;
+}
+
+.InputContentt:hover{
+    border-bottom: 2px solid red;
+}
+  
+.Forgot{
+  font-size: 20px;
+  color: blue;
+  text-decoration: none;
+  
+}
+.Quote{
+  text-align: center;
+}
+.LoginTitle_1{
+  padding: 8px;
+}
+/*Login ends*/
