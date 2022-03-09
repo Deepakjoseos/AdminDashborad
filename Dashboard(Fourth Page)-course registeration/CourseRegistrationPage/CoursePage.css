@@ -1,0 +1,8 @@
+.courseregpage{
+    flex: 4;
+
+}
+.courseregtable{
+    display: flex;
+    height: 88%;
+}

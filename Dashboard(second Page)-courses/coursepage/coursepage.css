@@ -1,0 +1,8 @@
+.coursepage{
+    flex: 4;
+}
+.Coursetable{
+    display: flex;
+    height: 88%;
+    
+}
