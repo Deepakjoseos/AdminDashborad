@@ -1,0 +1,8 @@
+.academicmem{
+    flex: 4;
+
+}
+.academictable{
+    display: flex;
+    height: 88%;
+}

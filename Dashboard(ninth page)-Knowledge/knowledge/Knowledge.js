@@ -1,14 +1,15 @@
-import { React, useState} from 'react';
-import './courses.css';
+import { React, useState } from 'react';
+import './knowledge.css';
 import { TextField, IconButton } from "@material-ui/core";
-import { DeleteOutline, HomeSharp, SeacheOutlined, SearchOutlined } from "@material-ui/icons";
+import { DeleteOutline, HomeSharp, SearchOutlined } from "@material-ui/icons";
 import { userRows } from "../dashboard/dummyData";
 import { Link } from "react-router-dom";
 import { DataGrid, GridToolbarExport, GridToolbarContainer} from "@material-ui/data-grid";
 
 
 
-function Courses(props) {
+
+function Knowledge(props) {
     const [data, setData] = useState(userRows);
 
     const handleDelete = (id) => {
@@ -16,49 +17,27 @@ function Courses(props) {
   };
   
   const columns = [
-    { field: "id", headerName: "INDEX NO", width: 200 },
-    {
-      field: "course",
-      headerName: "COURSE",
-      width: 500,
-      renderCell: (params) => {
-        return (
-          <div className="CourseListUser">
-            {params.row.course}
-          </div>
-        );
-      },
-    },
-    { field: " courseimage", headerName: "COURSE IMAGE", width: 200,
+    { field: "id", headerName: "INDEX NO", width: 300 },
+    
+    { field: "email", headerName: "KNOWLEDGE PARTNER IMAGE", width: 300,
     renderCell: (params) => {
         return (
           <div className="userListUser">
-            <img className="CourseListImg" src={params.row.courseimage} alt="" />
+            <img className="CourseListImg" src={params.row.avatar} alt="" />
           </div>
         );
       },
 },
+
     
-    {
-      field: "coursefee",
-      headerName: "COURSE FEE",
-      width: 250,
-    },
-    {
-        field: "status",
-        headerName: "STATUS",
-        width: 190,
-      },
     {
       field: "action",
       headerName: "ACTION",
-      width: 180,
+      width: 300,
       renderCell: (params) => {
         return (
           <>
-            <Link to={"/dashboard/courselist/course" + params.row.id}>
-              <button className="CourseListEdit">Edit</button>
-            </Link>
+            
             <DeleteOutline
               className="CourseListDelete"
               onClick={() => handleDelete(params.row.id)}
@@ -69,6 +48,7 @@ function Courses(props) {
     },
   ];
 
+
   function MyExportButton(){
     return(
       <GridToolbarContainer>
@@ -77,21 +57,23 @@ function Courses(props) {
     );
   }
     return (
-      
-        
-      
         <div className="CoursesTable">
-          <button className="Courseaddbutton">ADD COURSES</button>
 
+
+<button className="Courseaddbutton">ADD KNOWLEDGE</button>
+
+         
       <DataGrid
         rows={data}
         disableSelectionOnClick
         columns={columns}
+        pageSize={8}
         checkboxSelection
         components={{Toolbar:MyExportButton,}}
       />
     </div>
     );
+
 }
 
-export default Courses;
+export default Knowledge;

@@ -95,7 +95,8 @@ function Testimonial(props) {
 
     return (
         <div className="CoursesTable">
-          
+  <button className="Courseaddbutton">ADD TESTIMONIALS</button>
+        
               
       <DataGrid
         rows={data}

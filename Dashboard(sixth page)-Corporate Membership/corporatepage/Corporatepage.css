@@ -1,0 +1,8 @@
+.corporategpage{
+    flex: 4;
+
+}
+.corporatetable{
+    display: flex;
+    height: 88%;
+}

@@ -8,6 +8,7 @@ import { HomeSharp, SeacheOutlined, SearchOutlined } from "@material-ui/icons";
 function Dashsearch(props) {
     return (
       <div className='dashsearch'>
+
         <div className='Menu'>
             
             <HomeSharp  fontSize='large' />
@@ -19,7 +20,7 @@ function Dashsearch(props) {
                 /
               </li>
               <li className='MenuItem'>
-                Courses
+                Academic Membership
               </li>
              
   
@@ -31,8 +32,8 @@ function Dashsearch(props) {
                   <SearchOutlined />
                 </IconButton>
               )}} />
+             </div>
               </div>
-</div>
     );
 }
 

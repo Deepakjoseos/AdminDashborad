@@ -1,0 +1,8 @@
+.partnergpage{
+    flex: 4;
+
+}
+.partnertable{
+    display: flex;
+    height: 88%;
+}

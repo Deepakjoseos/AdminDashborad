@@ -1,10 +1,8 @@
-
 .CoursesTable{
     flex: 4;
     background-color: white;
     border-radius: 10px;
     margin-top: 10px;
-    
 
 
 }
@@ -34,31 +32,4 @@
       color: red;
       cursor: pointer;
   }
- 
-.Menu{
-  display: flex;
-  list-style: none;
-  text-decoration: none;
-  padding: 10px;
-  color: darkblue;
-
-}
-.MenuItem{
-  padding: 5px;
-  font-size: 24px;
-}
-
-.Courseaddbutton{
-  width: 150px;
-  height: 50px;
-  background-color: blue;
-  color: white;
-  border-radius: 8px;
-  font-size: 15px;
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 85%;
-}
+  
